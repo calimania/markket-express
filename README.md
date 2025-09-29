@@ -1,3 +1,22 @@
+# Markket Express
+
+Plantilla e-commerce compatible con Astro. Usando elementos de [Creative Tim](https://www.creative-tim.com/astro)
+
+Usando [markket](https://de.markket.place) como backend.
+
+Adicionalmnete, este es el primer repositorio de ejemplo en español.
+
+Clonar este repositorio para comenzar, o usa `npm create astro@latest` para crear un nuevo proyecto de astro
+
+Usando [cafecito](https://www.npmjs.com/package/cafecito) y el astro content layer es facil acceder al contenido estatico en Strapi,
+para generar todo el website en cada deploy. (store, pages, articles, products, albums)
+
+Información dinamica se resuelve con react en cada visita, por ejemplo, revisar el estado de una transacción.
+
+[Hosting gratis con paginas de github](https://docs.github.com/es/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+[Digital Ocean app platform](https://www.digitalocean.com/products/app-platform)
+
 # Welcome to [Astro Ecommerce](https://www.creative-tim.com/astro)
 
 ![version](https://img.shields.io/badge/version-1.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/astro-ecommerce.svg?maxAge=2592000)](https://github.com/creativetimofficial/astro-ecommerce/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/astro-ecommerce.svg?maxAge=2592000)](https://github.com/creativetimofficial/astro-ecommerce/issues?q=is%3Aissue+is%3Aclosed)
