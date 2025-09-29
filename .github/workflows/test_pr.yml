@@ -15,6 +15,7 @@ permissions:
 
 env:
   BUILD_PATH: "." # default value when not using subfolders
+  PUBLIC_URL : ${{ secrets.PUBLIC_URL }}
 
 jobs:
   test:
@@ -40,7 +41,7 @@ jobs:
           echo "PUBLIC_MARKKET_URL=${{ secrets.PUBLIC_MARKKET_URL }}" >> .env
           echo "PUBLIC_STORE_SLUG=${{ secrets.PUBLIC_STORE_SLUG }}" >> .env
           echo "PUBLIC_POSTHOG_KEY=${{ secrets.PUBLIC_POSTHOG_KEY }}" >> .env
-          echo "PUBLIC_URL=https://sell.markket.place" >> .env
+          echo "PUBLIC_URL=${{secrets.PUBLIC_URL}}" >> .env
         working-directory: ${{ env.BUILD_PATH }}
 
       - name: Test Build with Astro

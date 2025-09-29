@@ -3,277 +3,311 @@
     {
       "id": "01",
       "thumb_src": "/images/suit-3.jpg",
-      "thumb_alt": "watch-image",
+      "thumb_alt": "camiseta-markket-express",
       "images": [
         {
-          "src": "https://images.unsplash.com/photo-1611930021592-a8cfd5319ceb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-          "alt": "first_image"
+          "src": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+          "alt": "camiseta-markket-frontal"
         },
         {
-          "src": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-          "alt": "second_image"
+          "src": "https://images.unsplash.com/photo-1583743814966-8936f37f73b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+          "alt": "camiseta-markket-trasera"
         },
         {
-          "src": "https://images.unsplash.com/photo-1513116476489-7635e79feb27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-          "alt": "third_image"
+          "src": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+          "alt": "camiseta-markket-detalle"
         },
         {
-          "src": "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-          "alt": "fourth_image"
+          "src": "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+          "alt": "camiseta-markket-uso"
         }
       ],
-      "color": "8 colors",
+      "color": "3 colores",
       "colors": [
-        "red", 
-        "blue", 
-        "green"
+        "negro", 
+        "blanco", 
+        "azul"
       ],
-      "title": "Basic Starter Pack",
-      "price": 399,
-      "description": "That’s the main thing people are controlled by! Thoughts- their perception of themselves!",
-      "full_description": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out.",
-      "details": "There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn.",
+      "title": "Camiseta Oficial Markkët",
+      "price": 25,
+      "description": "Muestra tu pasión por el ecommerce español con la camiseta oficial de Markkët Express.",
+      "full_description": "Camiseta premium de algodón 100% con el logo oficial de Markkët. Perfecta para desarrolladores, emprendedores y amantes del ecommerce. Diseño exclusivo que representa la innovación y calidad española.",
+      "details": "Confeccionada con algodón orgánico de primera calidad. Corte unisex cómodo. Diseño serigrafiado con tintas ecológicas que garantizan durabilidad y colores vibrantes.",
       "highlights": [
-        "Oil is a primary source of energy for various sectors, including transportation, industries, and residential use.",
-        "Oil is highly versatile and used in the production of a wide range of products. It serves as a raw material for manufacturing plastics",
-        "Oil is a crucial source of petrochemicals, which are used in the production of plastics."
+        "Logo oficial de Markkët bordado con hilos de alta calidad",
+        "Algodón 100% orgánico certificado, suave al tacto",
+        "Diseño exclusivo creado por el equipo de Markkët Express"
       ],
       "features": [
-        "Multiple strap configuration",
-        "Water Resistant",
-        "Stainless strap loops",
-        "Ultra-soft 100% cotton"
+        "Cuello redondo reforzado",
+        "Resistente al lavado",
+        "Corte unisex",
+        "Algodón 100% orgánico"
       ],
-      "rating": 4,
-      "reviews": 117,
-      "size": "Small",
+      "rating": 5,
+      "reviews": 47,
+      "size": "M",
       "sizes": {
-        "XS": 3,
-        "S": 0,
-        "M": 1,
-        "L": 1213,
-        "XL": 6
+        "XS": 12,
+        "S": 8,
+        "M": 25,
+        "L": 18,
+        "XL": 10
       },
       "data": {
-        "Features": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you.",
-        "Care": "It really matters and then like it really doesn`t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn`t matter. Because it's about motivating the doers. Because I`m here to follow my dreams and inspire other people to follow their dreams, too.",
-        "Shipping": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it?",
-        "Returns": "I always felt like I could do anything. That`s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can`t do anything, you won`t do anything. I was taught I could do everything."
+        "Características": "Camiseta oficial con el logo de Markkët Express. Perfecta para mostrar tu apoyo al ecommerce español y la innovación tecnológica.",
+        "Cuidado": "Lavar a máquina con agua fría. No usar lejía. Secar al aire libre o a baja temperatura. Planchar del revés si es necesario.",
+        "Envío": "Envío gratuito a toda España en pedidos superiores a 50€. Entrega en 24-48 horas laborables. Empaque sostenible y reciclable.",
+        "Devoluciones": "Devoluciones gratuitas en 30 días. Si no estás satisfecho con tu compra, te devolvemos el 100% del dinero sin preguntas."
       },
       "featuresDetails": {
-        "Origin": "Oil is a primary source of energy for various sectors, including transportation, industries, and residential use.",
-        "Material": "Oil is highly versatile and used in the production of a wide range of products. It serves as a raw material for manufacturing plastics.",
-        "Dimensions": "Oil is a crucial source of petrochemicals, which are used in the production of plastics."
+        "Origen": "Diseñado en España por el equipo de Markkët Express",
+        "Material": "Algodón 100% orgánico certificado GOTS, libre de químicos nocivos",
+        "Dimensiones": "Consulta nuestra guía de tallas para el ajuste perfecto"
       },
       "stock": true
     },
     {
       "id": "02",
       "thumb_src": "/images/suit-1.jpg",
-      "thumb_alt": "watch-image",
+      "thumb_alt": "consultoria-ecommerce",
       "images": [
         {
-          "src": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-          "alt": "first_image"
+          "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+          "alt": "consultoría-estrategia"
         },
         {
-          "src": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-          "alt": "second_image"
+          "src": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+          "alt": "consultoría-reunión"
         },
         {
-          "src": "https://images.unsplash.com/photo-1508296695146-257a814070b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-          "alt": "third_image"
+          "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+          "alt": "consultoría-análisis"
         },
         {
-          "src": "https://images.unsplash.com/photo-1522125123931-9304d91a42ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-          "alt": "fourth_image"
+          "src": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+          "alt": "consultoría-resultados"
         }
       ],
-      "color": "Black",
-      "colors": ["black", "green", "white"],
-      "title": "Pink Blouse",
-      "price": 1490,
+      "color": "Servicio Digital",
+      "colors": ["premium", "estratégico", "personalizado"],
+      "title": "Consultoría Ecommerce Premium",
+      "price": 150,
       "rating": 5,
-      "reviews": 117,
-      "description": "That’s the main thing people are controlled by! Thoughts- their perception of themselves!",
-      "full_description": "The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming `Charcoal Gray` limited release.",
+      "reviews": 28,
+      "description": "Transformamos tu negocio con estrategias de ecommerce probadas y adaptadas al mercado español.",
+      "full_description": "Servicio de consultoría especializado en ecommerce para empresas que buscan maximizar sus ventas online. Incluye análisis de mercado, optimización de conversiones y estrategias de marketing digital.",
       "features": [
-        "Multiple strap configuration",
-        "Water Resistant",
-        "Stainless strap loops",
-        "Ultra-soft 100% cotton"
+        "Análisis completo de tu negocio actual",
+        "Estrategia personalizada de ecommerce",
+        "Plan de acción detallado",
+        "Seguimiento y optimización continua"
       ],
-      "size": "Medium",
+      "size": "2 horas",
       "sizes": {
-        "XS": 3,
-        "S": 0,
-        "M": 1,
-        "L": 0,
-        "XL": 6
+        "Básica": 1,
+        "Estándar": 5,
+        "Premium": 0,
+        "Enterprise": 3,
+        "Custom": 2
       },
       "data": {
-        "Features": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you.",
-        "Care": "It really matters and then like it really doesn`t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn`t matter. Because it's about motivating the doers. Because I`m here to follow my dreams and inspire other people to follow their dreams, too.",
-        "Shipping": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it?",
-        "Returns": "I always felt like I could do anything. That`s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can`t do anything, you won`t do anything. I was taught I could do everything."
+        "Características": "Consultoría personalizada con expertos en ecommerce español. Estrategias probadas que han ayudado a cientos de empresas a crecer online.",
+        "Metodología": "Aplicamos metodologías ágiles y data-driven para maximizar el ROI de tu inversión en ecommerce. Análisis profundo del mercado español.",
+        "Entrega": "Sesión virtual de 2 horas + informe detallado + plan de acción. Todo documentado y listo para implementar.",
+        "Soporte": "Incluye 1 mes de soporte vía email para resolver dudas sobre la implementación de las estrategias propuestas."
       },
       "featuresDetails": {
-        "Origin": "Designed by Good Goods, Inc.",
-        "Material": "Solid walnut base with rare earth magnets and powder coated steel card cover",
-        "Dimensions": "6.25 x 3.55' x 1.15'",
-        "Finish": "Hand sanded and finished with natural oil",
-        "Includes": "Wood card tray and 3 refill packs",
-        "Considerations": "Made from natural materials. Grain and color vary with each item."
+        "Experticia": "Más de 5 años especializados en ecommerce español",
+        "Metodología": "Análisis de datos, investigación de mercado y benchmarking competitivo",
+        "Entregables": "Informe de 20+ páginas, plan de acción, roadmap de implementación",
+        "Garantía": "Satisfacción garantizada o devolvemos tu dinero",
+        "Incluye": "Sesión estratégica, informe detallado y 1 mes de soporte",
+        "Consideraciones": "Requiere acceso a analytics y datos de tu negocio actual"
       },
-      "stock": false
+      "stock": true
     },
     {
       "id": "03",
       "thumb_src": "/images/suit-2.jpg",
-      "thumb_alt": "iMac-image",
+      "thumb_alt": "plantilla-astro-ecommerce",
       "images": [
         {
-          "src": "https://images.unsplash.com/photo-1567790350645-dbc1486a89c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
-          "alt": "first_image"
+          "src": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
+          "alt": "plantilla-homepage"
         },
         {
-          "src": "https://images.unsplash.com/photo-1593088177922-aa1c5055c7b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
-          "alt": "second_image"
+          "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
+          "alt": "plantilla-dashboard"
         },
         {
-          "src": "https://images.unsplash.com/photo-1635594202056-9ea3b497e5c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
-          "alt": "third_image"
+          "src": "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
+          "alt": "plantilla-responsive"
         },
         {
-          "src": "https://images.unsplash.com/photo-1593085260707-5377ba37f868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
-          "alt": "fourth_image"
+          "src": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80",
+          "alt": "plantilla-código"
         }
       ],
-      "color": "Yellow",
-      "colors": ["SpaceGray"],
-      "title": "Premium Suit",
-      "description": "There’s nothing I really wanted to do in life that I wasn’t able to get good at.",
-      "price": 1399,
-      "size": "Large",
+      "color": "Tecnología",
+      "colors": ["Astro", "React", "TypeScript"],
+      "title": "Plantilla Astro Ecommerce Pro",
+      "description": "Plantilla profesional de ecommerce desarrollada con Astro, optimizada para rendimiento y SEO.",
+      "price": 89,
+      "size": "Código Completo",
       "sizes": {
-        "XS": 3,
-        "S": 0,
-        "M": 1,
-        "L": 0,
-        "XL": 6
+        "Básica": 15,
+        "Pro": 8,
+        "Enterprise": 3,
+        "Custom": 0,
+        "Licencia": 12
       },
       "data": {
-        "Design": "If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
-        "Material": "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it? People are so scared to lose that they don't even try.",
-        "Considerations": "I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can’t do anything, you won’t do anything. I was taught I could do everything.",
-        "Included": "We’re not always in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed."
+        "Tecnología": "Desarrollada con Astro, React y TypeScript. Optimizada para máximo rendimiento y SEO. Compatible con las últimas tendencias del desarrollo web.",
+        "Funcionalidades": "Carrito de compras, checkout completo, gestión de productos, panel administrativo, integración con APIs, sistema de pagos y mucho más.",
+        "Personalización": "Código limpio y bien documentado. Fácil de personalizar y extender. Incluye componentes reutilizables y diseño modular para máxima flexibilidad.",
+        "Soporte": "Documentación completa en español, ejemplos de implementación y 6 meses de actualizaciones gratuitas incluidas."
       },
       "stock": true
     },
     {
       "id": "04",
       "thumb_src": "/images/suit-5.jpg",
-      "thumb_alt": "iPhone_thumb",
-      "color": "Blue",
-      "title": "iPhone",
-      "description": "That’s the main thing people are controlled by! Thoughts- their perception of themselves!",
-      "price": 1599,
-      "size": "Small",
+      "thumb_alt": "sudadera-markket",
+      "color": "Gris",
+      "title": "Sudadera Markkët Express",
+      "description": "Sudadera premium con capucha y logo bordado de Markkët Express. Perfecta para el día a día.",
+      "price": 45,
+      "size": "L",
       "sizes": {
-        "XS": 3,
-        "S": 0,
-        "M": 1,
-        "L": 0,
-        "XL": 6
+        "XS": 5,
+        "S": 12,
+        "M": 18,
+        "L": 15,
+        "XL": 8
       },
-      "stock": false
+      "stock": true
+    },
+    {
+      "id": "05",
+      "thumb_src": "/images/suit-4.jpg",
+      "thumb_alt": "curso-ecommerce",
+      "color": "Digital",
+      "title": "Curso Ecommerce Completo",
+      "description": "Aprende a crear y gestionar tu tienda online desde cero con nuestro curso completo en español.",
+      "price": 199,
+      "size": "20 horas",
+      "sizes": {
+        "Básico": 25,
+        "Intermedio": 18,
+        "Avanzado": 12,
+        "Premium": 5,
+        "VIP": 2
+      },
+      "stock": true
+    },
+    {
+      "id": "06",
+      "thumb_src": "/images/suit-6.jpg",
+      "thumb_alt": "taza-markket",
+      "color": "Blanco",
+      "title": "Taza Oficial Markkët",
+      "description": "Taza de cerámica con el logo de Markkët. Perfecta para tu café mientras programas.",
+      "price": 12,
+      "size": "350ml",
+      "sizes": {
+        "Estándar": 45,
+        "Grande": 20,
+        "XL": 8
+      },
+      "stock": true
     }
   ],
   "categories": [
     {
       "thumb_src": "/images/category1.jpg",
-      "title": "Silk Dresses",
-      "collection": "Pre-fall"
+      "title": "Merchandising Oficial",
+      "collection": "Ropa y Accesorios"
     },
     {
       "thumb_src": "/images/category2.jpg",
-      "title": "Suits",
-      "collection": "Designers"
+      "title": "Servicios Digitales",
+      "collection": "Consultoría y Cursos"
     },
     {
       "thumb_src": "/images/category3.jpg",
-      "title": "Festival",
-      "collection": "Summer"
+      "title": "Plantillas Web",
+      "collection": "Desarrollo"
     },
     {
       "thumb_src": "/images/category4.jpg",
-      "title": "Showroom",
-      "collection": "Sale"
+      "title": "Formación",
+      "collection": "Educación"
     },
     {
       "thumb_src": "/images/product10.jpg",
-      "title": "Living Sofas",
-      "collection": "Interior Design"
+      "title": "Accesorios Tech",
+      "collection": "Gadgets para Desarrolladores"
     },
     {
       "thumb_src": "/images/category5.jpg",
-      "title": "Chairs by Designers",
-      "collection": "Sale"
+      "title": "Swag Markkët",
+      "collection": "Edición Limitada"
     },
     {
       "thumb_src": "/images/product9.jpg",
-      "title": "Home care",
-      "collection": "Products"
+      "title": "Herramientas Pro",
+      "collection": "Software y Plugins"
     }
   ],
   "reviews": [
     {
       "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
-      "name": "Hector Gibbs",
-      "date": "July 17, 2023",
+      "name": "Carlos Mendoza",
+      "date": "15 de Septiembre, 2025",
       "rating": 5,
-      "comment": "As we live, our hearts turn colder. Cause pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. ",
+      "comment": "La camiseta es de excelente calidad y el logo se ve increíble. Perfecto para mostrar mi apoyo a Markkët Express. El algodón es muy suave y el corte es perfecto.",
       "productID": "01"
     },
     {
       "avatar": "https://images.unsplash.com/photo-1618077360395-f3068be8e001?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
-      "name": "Willie Manson",
-      "date": "Aug 18, 2023",
-      "rating": 4,
-      "comment": "It really matters and then like it really doesn’t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn’t matter.",
-      "productID": "01"
+      "name": "Ana García",
+      "date": "22 de Agosto, 2025",
+      "rating": 5,
+      "comment": "La consultoría superó todas mis expectativas. Las estrategias propuestas aumentaron mis ventas un 300% en solo 2 meses. Totalmente recomendado.",
+      "productID": "02"
     },
     {
       "avatar": "https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
-      "name": "Mary Doyle",
-      "date": "Nov 11, 2023",
+      "name": "María López",
+      "date": "5 de Septiembre, 2025",
       "rating": 5,
-      "comment": "It really matters and then like it really doesn’t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn’t matter.",
-      "productID": "01"
+      "comment": "La plantilla de Astro es increíble. Código muy limpio, bien documentado y súper fácil de personalizar. El soporte es excelente.",
+      "productID": "03"
     },
     {
       "avatar": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
-      "name": "Joe Molly",
-      "date": "Mar 23, 2023",
-      "rating": 3,
-      "comment": "It’s like a little kid, a little boy, looking at colors, and no one told him what colors are good, before somebody tells you you shouldn’t like pink.",
-      "productID": "01"
+      "name": "David Rodríguez",
+      "date": "18 de Julio, 2025",
+      "rating": 4,
+      "comment": "El curso está muy completo y explicado de manera sencilla. Ideal para principiantes que quieren entrar al mundo del ecommerce.",
+      "productID": "05"
     },
     {
       "avatar": "https://images.unsplash.com/photo-1534126416832-a88fdf2911c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
-      "name": "Keisha Megan",
-      "date": "Jun 21, 2023",
-      "rating": 4,
-      "comment": "For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it?",
-      "productID": "01"
+      "name": "Laura Fernández",
+      "date": "3 de Septiembre, 2025",
+      "rating": 5,
+      "comment": "La sudadera es súper cómoda y el diseño está genial. La uso todos los días para trabajar desde casa. Calidad premium.",
+      "productID": "04"
     },
     {
       "avatar": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80",
-      "name": "Kevin Klein",
-      "date": "Dec 01, 2023",
+      "name": "Javier Martín",
+      "date": "28 de Agosto, 2025",
       "rating": 5,
-      "comment": "Society has put up so many boundaries, so many limitations on what’s right and wrong that it’s almost impossible to get a pure thought out.",
-      "productID": "01"
+      "comment": "La taza es perfecta para mi café mañanero mientras programo. El logo se ve increíble y la calidad es excelente. Muy contento con la compra.",
+      "productID": "06"
     }
   ],
   "orders": [
@@ -282,85 +316,79 @@
       "products": [
         {
           "id": "01",
-          "status": "Processed",
-          "quantity": 1,
-          "dateModified": "March 23, 2023"
+          "status": "Entregado",
+          "quantity": 2,
+          "dateModified": "15 de Septiembre, 2025"
         },
         {
-          "id": "02",
-          "status": "Delivered",
-          "quantity": 3,
-          "dateModified": "June 28, 2023"
+          "id": "06",
+          "status": "Entregado",
+          "quantity": 1,
+          "dateModified": "15 de Septiembre, 2025"
         }
       ],
       "payment": {
         "cardNumber": "0042",
         "expiringDate": "06/26"
       },
-      "date": "March 23, 2023",
-      "address": "362 Ridgewood, Alaska 99669, USA",
-      "email": "michael@email.com",
-      "phoneNumber": "(808) 791-6935"
+      "date": "12 de Septiembre, 2025",
+      "address": "Calle Mayor 123, 28001 Madrid, España",
+      "email": "carlos@email.com",
+      "phoneNumber": "+34 666 123 456"
     },
     {
-      "orderNumber": "WB2341",
+      "orderNumber": "MK2341",
       "products": [
         {
-          "id": "03",
-          "status": "Order Placed",
+          "id": "02",
+          "status": "Completado",
           "quantity": 1,
-          "dateModified": "March 23, 2023"
+          "dateModified": "25 de Agosto, 2025"
         }
       ],
       "payment": {
         "cardNumber": "4119",
         "expiringDate": "06/26"
       },
-      "date": "March 28, 2023",
-      "address": "362 Ridgewood Dr, Soldotna, Alaska 99669, USA",
-      "email": "john@email.com",
-      "phoneNumber": "(307) 612-7721"
+      "date": "20 de Agosto, 2025",
+      "address": "Avenida de la Paz 45, 08002 Barcelona, España",
+      "email": "ana@email.com",
+      "phoneNumber": "+34 677 789 123"
     },
     {
-      "orderNumber": "010110",
+      "orderNumber": "MKE110",
       "products": [
         {
-          "id": "04",
-          "status": "Order Placed",
+          "id": "03",
+          "status": "Descargado",
           "quantity": 1,
-          "dateModified": "Sep 09, 2023"
+          "dateModified": "10 de Septiembre, 2025"
         },
         {
-          "id": "01",
-          "status": "Shipped",
+          "id": "05",
+          "status": "En Progreso",
           "quantity": 1,
-          "dateModified": "Sep 12, 2023"
-        },
-        {
-          "id": "02",
-          "status": "Delivered",
-          "quantity": 1,
-          "dateModified": "Sep 13, 2023"
+          "dateModified": "8 de Septiembre, 2025"
         }
       ],
       "payment": {
         "cardNumber": "5290",
         "expiringDate": "11/27"
       },
-      "date": "Sep 07, 2023",
-      "address": "362 Ridgewood, Alaska 99669, USA",
-      "email": "doe@email.com",
-      "phoneNumber": "(307) 682-8835"
+      "date": "5 de Septiembre, 2025",
+      "address": "Plaza España 8, 41001 Sevilla, España",
+      "email": "maria@email.com",
+      "phoneNumber": "+34 655 456 789"
     }
   ],
   "shoppingCart": [
     "01", 
     "02", 
-    "03"
+    "06"
   ],
   "shoppingCart2": [ 
-    "02", 
-    "03",
-    "04"
+    "03", 
+    "04",
+    "05"
   ]
 }
