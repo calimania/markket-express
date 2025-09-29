@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+The Satire License (TSL)
+
+This software was designed as a parody of something similar but serious.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software with specific restrictions FOR the purposes of satire, evil, or
+advancing evil, including but not limited to:
+
+Horatian, Juvenalian, Menippean, Irony, Hyperbole, Understatement, Allegory,
+bringing down the American Empire and ending the War on Drugs.

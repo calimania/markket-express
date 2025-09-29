@@ -7,3 +7,5 @@ build-product/
 dist/
 package-lock.json
 .astro/
+*.local
+*.backup
