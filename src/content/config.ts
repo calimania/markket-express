@@ -53,13 +53,19 @@ const pages = defineCollection({
   }) as Loader,
 });
 
-
 const store = defineCollection({
-  loader: strapiLoader({
-    contentType: "store",
-    filter: `filters[slug][$eq]=${config.store_slug}`,
-    populate: 'SEO.socialImage,Logo,URLS,Favicon,Cover'
-  }) as Loader,
+  loader: {
+    name: `strapi-store-info`,
+    schema: async () => await fetchStrapiSchema('store', config.api_url),
+    load: async ({ store, logger, meta }) => {
+      logger.info('fetch:store:info');
+      const data = await fetch(new URL(`/api/stores/${config.store_slug}/info`, config.api_url));
+      const posts = await data?.json();
+      store.clear();
+      posts?.data.forEach((item: any) => store.set({ id: item.id, data: item }));
+      meta.set("lastSynced", String(Date.now()));;
+    }
+  } as Loader,
 });
 
 const stores = defineCollection({
