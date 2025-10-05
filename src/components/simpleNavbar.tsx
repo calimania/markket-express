@@ -64,7 +64,7 @@ const SimpleNavbar: React.FC<SimpleNavbarProps> = ({ storeName = "Markkët Expre
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
+              <a className="nav-link" href="/contacto">
                 <i className="bi bi-envelope me-1"></i>
                 Contacto
               </a>

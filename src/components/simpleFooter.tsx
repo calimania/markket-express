@@ -71,7 +71,7 @@ const SimpleFooter: React.FC<SimpleFooterProps> = ({ store = {} }) => {
           <div className="col-md-2 mb-4">
             <h6 className="fw-bold mb-3 text-white">Soporte</h6>
             <ul className="list-unstyled">
-              <li><a href="/contact" className="text-light text-decoration-none opacity-75 hover-opacity-100">Contacto</a></li>
+              <li><a href="/contacto" className="text-light text-decoration-none opacity-75 hover-opacity-100">Contacto</a></li>
               <li><a href="/help" className="text-light text-decoration-none opacity-75 hover-opacity-100">Ayuda</a></li>
               <li><a href="/terms" className="text-light text-decoration-none opacity-75 hover-opacity-100">Términos</a></li>
               <li><a href="/privacy" className="text-light text-decoration-none opacity-75 hover-opacity-100">Privacidad</a></li>
