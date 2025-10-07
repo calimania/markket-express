@@ -3,58 +3,89 @@
  * pages: Array of either collection entries or raw page data objects
  * Each item may be: { id, data } or the direct data object.
  */
-const { pages = [], className = '' } = Astro.props;
+const { pages = [], className = "" } = Astro.props;
 
 const href = (slug: string) => {
-  const map = {
-    home: '/',
-    blog: '/blog',
-    newsletter: '/newsletter',
-    contact: '/contacto',
-    about: '/about'
-  }
+  const map: Record<string, string> = {
+    home: "/",
+    blog: "/blog",
+    newsletter: "/newsletter",
+    contact: "/contacto",
+    about: "/about",
+    products: "/servicios",
+  };
 
   return map[slug] || `/about/${slug}`;
-}
+};
 ---
 
 <div class={`row ${className}`}>
-  {pages.map((entry: any) => {
-    const p = entry?.data ? entry.data : entry;
-    const title = p?.Title || p?.title || 'Untitled';
-    const slug = p?.slug || p?.Slug || p?.id || '';
-    const img = p?.Cover?.url || p?.SEO?.socialImage?.url || '';
-    const desc = p?.SEO?.metaDescription || (p?.Content && p.Content[0]?.children?.[0]?.text) || '';
+  {
+    pages.map((entry: any) => {
+      const p = entry?.data ? entry.data : entry;
+      const title = p?.Title || p?.title || "Untitled";
+      const slug = p?.slug || p?.Slug || p?.id || "";
+      const img = p?.Cover?.url || p?.SEO?.socialImage?.url || "";
+      const desc =
+        p?.SEO?.metaDescription ||
+        (p?.Content && p.Content[0]?.children?.[0]?.text) ||
+        "";
 
-    return (
-      <div class="col-12 col-md-6 col-lg-3 mb-4">
-        <a href={href(slug)} class="text-decoration-none">
-          <div class="card h-100 border-0 shadow-sm hover-lift overflow-hidden">
-            {img ? (
-              <div style="height:160px; overflow:hidden;">
-                <img src={img} alt={title} class="w-100 h-100 object-cover" style="object-fit:cover;" />
+      return (
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <a href={href(slug)} class="text-decoration-none">
+            <div class="card h-100 border-0 shadow-sm hover-lift overflow-hidden">
+              {img ? (
+                <div style="height:160px; overflow:hidden;">
+                  <img
+                    src={img}
+                    alt={title}
+                    class="w-100 h-100 object-cover"
+                    style="object-fit:cover;"
+                  />
+                </div>
+              ) : (
+                <div
+                  class="bg-light d-flex align-items-center justify-content-center"
+                  style="height:160px;"
+                >
+                  <i class="bi bi-file-earmark-text fs-1 text-muted" />
+                </div>
+              )}
+              <div class="card-body">
+                <h5 class="card-title mb-2 text-dark">{title}</h5>
+                {desc && (
+                  <p class="card-text text-muted small">
+                    {desc.slice(0, 120)}
+                    {desc.length > 120 ? "..." : ""}
+                  </p>
+                )}
               </div>
-            ) : (
-              <div class="bg-light d-flex align-items-center justify-content-center" style="height:160px;">
-                <i class="bi bi-file-earmark-text fs-1 text-muted"></i>
+              <div class="card-footer bg-white border-0">
+                <small class="text-primary">
+                  Leer más <i class="bi bi-arrow-right ms-1" />
+                </small>
               </div>
-            )}
-            <div class="card-body">
-              <h5 class="card-title mb-2 text-dark">{title}</h5>
-              {desc && <p class="card-text text-muted small">{desc.slice(0, 120)}{desc.length>120? '...': ''}</p>}
             </div>
-            <div class="card-footer bg-white border-0">
-              <small class="text-primary">Leer más <i class="bi bi-arrow-right ms-1"></i></small>
-            </div>
-          </div>
-        </a>
-      </div>
-    );
-  })}
+          </a>
+        </div>
+      );
+    })
+  }
 </div>
 
 <style is:global>
-  .hover-lift { transition: transform .18s ease, box-shadow .18s ease; }
-  .hover-lift:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(12, 20, 50, 0.12); }
-  .object-cover { object-fit: cover; height:100%; }
+  .hover-lift {
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(12, 20, 50, 0.12);
+  }
+  .object-cover {
+    object-fit: cover;
+    height: 100%;
+  }
 </style>

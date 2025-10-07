@@ -24,7 +24,7 @@ const SimpleFooter: React.FC<SimpleFooterProps> = ({ store = {} }) => {
             <h5 className="fw-bold mb-3">{storeName}</h5>
             <p className="text-light opacity-75">{storeDescription}</p>
             <div className="d-flex gap-3">
-              {storeSocial?.facebook && (
+              {/* {storeSocial?.facebook && (
                 <a href={storeSocial.facebook} className="text-light" target="_blank" rel="noopener noreferrer">
                   <i className="bi bi-facebook fs-5"></i>
                 </a>
@@ -38,21 +38,8 @@ const SimpleFooter: React.FC<SimpleFooterProps> = ({ store = {} }) => {
                 <a href={storeSocial.twitter} className="text-light" target="_blank" rel="noopener noreferrer">
                   <i className="bi bi-twitter fs-5"></i>
                 </a>
-              )}
+              )} */}
               {/* Fallback social links if no store social data */}
-              {!storeSocial?.facebook && !storeSocial?.instagram && !storeSocial?.twitter && (
-                <>
-                  <a href="#" className="text-light">
-                    <i className="bi bi-facebook fs-5"></i>
-                  </a>
-                  <a href="#" className="text-light">
-                    <i className="bi bi-instagram fs-5"></i>
-                  </a>
-                  <a href="#" className="text-light">
-                    <i className="bi bi-twitter fs-5"></i>
-                  </a>
-                </>
-              )}
             </div>
           </div>
 

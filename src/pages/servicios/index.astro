@@ -1,42 +1,34 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import SimpleNavbar from "../components/simpleNavbar";
-import SimpleFooter from "../components/simpleFooter";
-import CardProduct from "../components/products/cardProduct";
-import data from "../../public/data.json";
-
+import Layout from "../../layouts/BasicLayout.astro";
+import CardProduct from "../../components/products/product.cards";
 import { getCollection } from "astro:content";
 
 const storeData = await getCollection("store");
+const products = await getCollection("products");
+const pages = await getCollection("pages");
+
+const page = pages.find((p) => p.data?.slug === "products")?.data;
+
 const store = storeData[0]?.data || {};
-const storeName = store.title || "Markkët Express";
-const storeDescription =
-  store.Description ||
-  "Plantilla y tienda compatible con Markkët para prestar servicios y vender productos.";
-const storeLogo = store.Logo?.url || "";
 const storeSEO = store.SEO || {};
 ---
 
 <Layout
-  title={`Productos - ${storeName}`}
-  description={`Descubre todos los productos disponibles en ${storeName}. ${storeDescription}`}
-  keywords="productos, tienda, comprar, ecommerce, online"
-  author={storeSEO.metaAuthor || "Markkët Express"}
-  ogImage={store.Logo?.url || store.Cover?.url}
-  favicon={store.Favicon?.url}
+  title={page?.Title || `Servicios, ${store.title}`}
+  description={page?.SEO?.metaDescription}
+  keywords={page?.SEO?.metaKeywords}
+  author={storeSEO.metaAuthor || store?.title}
+  ogImage={page?.SEO?.socialImage?.url || store.Logo?.url || store.Cover?.url}
+  canonical={page?.SEO?.metaUrl || `/servicios/`}
 >
-  <!-- Navigation -->
-  <SimpleNavbar storeName={storeName} storeLogo={storeLogo} />
-
   <main>
-    <!-- Hero Section -->
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8">
-            <h1 class="display-4 fw-bold mb-3">Nuestros Productos</h1>
+            <h1 class="display-4 fw-bold mb-3">{page?.Title || "Servicios"}</h1>
             <p class="lead text-muted">
-              Descubre nuestra amplia gama de productos de alta calidad
+              {page?.SEO?.metaDEscription}
             </p>
           </div>
         </div>
@@ -44,87 +36,40 @@ const storeSEO = store.SEO || {};
     </section>
 
     <div class="container my-5">
-      <!-- Filter Section -->
-      <section class="mb-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h5 class="mb-0">Mostrando {data.products.length} productos</h5>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <div class="d-flex gap-2 justify-content-md-end flex-wrap">
-              <button class="btn btn-outline-primary btn-sm active">Todos</button>
-              <button class="btn btn-outline-primary btn-sm">Camisetas</button>
-              <button class="btn btn-outline-primary btn-sm">Accesorios</button>
-              <button class="btn btn-outline-primary btn-sm">Servicios</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Products Grid -->
       <section class="mb-5">
         <div class="row">
           {
-            data.products.map((product) => (
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                <CardProduct
-                  thumb_src={product.thumb_src}
-                  thumb_alt={product.thumb_alt}
-                  color={product.color}
-                  colors={product.colors || []}
-                  title={product.title}
-                  description={product.description}
-                  price={product.price}
-                  position="center"
-                />
+            products.map((product: any) => (
+              <div class="col-md-12 col-lg-6 col-xl-6 mb-4">
+                <a
+                  href={`/servicios/${product?.data.slug || product.id}`}
+                  class="text-decoration-none"
+                >
+                  <CardProduct product={product?.data} position="center" />
+                </a>
               </div>
             ))
           }
         </div>
       </section>
 
-      <!-- Categories Section -->
-      <section class="my-5">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Categorías</h2>
-          <p class="lead text-muted">Explora nuestros productos por categoría</p>
-        </div>
-        <div class="row">
-          {
-            data.categories.map((category) => (
-              <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card border-0 shadow-sm h-100">
-                  <img 
-                    src={category.thumb_src} 
-                    alt={category.title}
-                    class="card-img-top"
-                    style="height: 200px; object-fit: cover;"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">{category.title}</h5>
-                    <p class="card-text text-muted small">{category.collection}</p>
-                    <button class="btn btn-outline-primary">
-                      Ver Productos
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))
-          }
-        </div>
-      </section>
-
-      <!-- Newsletter CTA -->
       <section class="my-5">
         <div class="bg-primary text-white rounded-3 p-5 text-center">
-          <h3 class="fw-bold mb-3">¿Quieres ser el primero en saber sobre nuevos productos?</h3>
+          <h3 class="fw-bold mb-3">
+            ¿Quieres ser el primero en saber sobre nuevos productos?
+          </h3>
           <p class="mb-4">
-            Suscríbete a nuestro boletín y mantente al día con las últimas novedades
+            Suscríbete a nuestro boletín y mantente al día con las últimas
+            novedades
           </p>
           <div class="row justify-content-center">
             <div class="col-md-6">
               <div class="input-group">
-                <input type="email" class="form-control" placeholder="Tu email">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Tu email"
+                />
                 <button class="btn btn-light" type="button">
                   <i class="bi bi-envelope me-1"></i>
                   Suscribirse
@@ -136,23 +81,4 @@ const storeSEO = store.SEO || {};
       </section>
     </div>
   </main>
-
-  <!-- Footer -->
-  <SimpleFooter storeName={storeName} storeDescription={storeDescription} />
 </Layout>
-
-<script>
-  // Simple filter functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.btn-outline-primary');
-    
-    filterButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
-        this.classList.add('active');
-      });
-    });
-  });
-</script>
