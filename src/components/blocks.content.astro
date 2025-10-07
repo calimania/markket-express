@@ -13,7 +13,7 @@ const { content, className = "" } = Astro.props;
   content && content.length > 0 && (
     <div class={`blocks-content ${className}`}>
       {content.map((block) => (
-        <Fragment>
+        <>
           {/* Paragraph blocks */}
           {block.type === "paragraph" && (
             <p class="mb-4 leading-relaxed">
@@ -291,7 +291,7 @@ const { content, className = "" } = Astro.props;
               {((block.image as any).caption ||
                 (block.image as any).alternativeText ||
                 (block.image as any).name) && (
-                <figcaption class="text-center text-sm text-gray-500 mt-3 italic">
+                <figcaption class="text-center text-sm text-muted mt-3 italic">
                   {(block.image as any).caption ||
                     (block.image as any).alternativeText ||
                     (block.image as any).name}
@@ -299,7 +299,7 @@ const { content, className = "" } = Astro.props;
               )}
             </figure>
           )}
-        </Fragment>
+          </>
       ))}
     </div>
   )

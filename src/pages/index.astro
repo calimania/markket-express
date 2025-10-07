@@ -4,6 +4,7 @@ import data from "../../public/data.json";
 import SimpleNavbar from "../components/simpleNavbar";
 import SimpleFooter from "../components/simpleFooter";
 import CardProduct from "../components/products/cardProduct";
+import PageCards from "../components/markket/pages.cards.astro";
 
 import { getCollection } from "astro:content";
 
@@ -16,6 +17,7 @@ const storeDescription =
 const storeLogo = store.Logo?.url || "";
 const storeCover = store.Cover?.url || "";
 const storeSEO = store.SEO || {};
+const pages = (await getCollection("pages"))?.splice(0, 2);
 ---
 
 <Layout
@@ -54,9 +56,9 @@ const storeSEO = store.SEO || {};
               <h1 class="display-4 fw-bold mb-3">{storeName}</h1>
               <p class="lead mb-4">{storeDescription}</p>
               <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="/products" class="btn btn-light btn-lg">
-                  <i class="bi bi-bag-fill me-2"></i>
-                  Ver Productos
+                <a href="/servicios" class="btn btn-light btn-lg">
+                  <i class="bi bi-briefcase me-2"></i>
+                  Ver Servicios
                 </a>
                 <a href="/about" class="btn btn-outline-light btn-lg">
                   <i class="bi bi-info-circle me-2"></i>
@@ -99,19 +101,18 @@ const storeSEO = store.SEO || {};
           }
         </div>
         <div class="text-center mt-4">
-          <a class="btn btn-primary btn-lg" href="/products">
-            Ver Todos los Productos
+          <a class="btn btn-primary btn-lg" href="/servicios">
+            Ver Todos los Servicios
             <i class="bi bi-arrow-right ms-2"></i>
           </a>
         </div>
       </section>
 
-      <!-- Simple About Section -->
       <section class="my-5">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <div class="bg-light rounded-3 p-5">
-              <h3 class="fw-bold mb-3">¿Por qué elegir {storeName}?</h3>
+              <h3 class="fw-bold mb-3">Conoce a {storeName}</h3>
               <p class="text-muted mb-4">{storeDescription}</p>
               <div class="row">
                 <div class="col-md-4 mb-3">
@@ -130,14 +131,19 @@ const storeSEO = store.SEO || {};
                   <small class="text-muted">Productos premium</small>
                 </div>
               </div>
-              <div class="mt-4">
-                <a href="/about" class="btn btn-outline-primary">
-                  Conoce Más Sobre Nosotros
-                  <i class="bi bi-arrow-right ms-2"></i>
-                </a>
-              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="my-5">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="display-6 fw-bold">Acerca de Nosostros</h2>
+          </div>
+        </div>
+        <div class="row">
+          <PageCards pages={pages} />
         </div>
       </section>
     </div>

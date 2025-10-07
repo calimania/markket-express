@@ -1,5 +1,99 @@
 ---
+import Layout from "../../layouts/BasicLayout.astro";
+import BlocksContent from "../../components/blocks.content.astro";
+import PageCards from "../../components/markket/pages.cards.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+
+  // Filter pages that should appear under /about
+  const aboutPages = pages.filter((p) => {
+    const slug = p.data?.slug || p.id;
+    if (!slug) return false;
+    // skip the index/about home or obvious root pages
+    if (slug === "about" || slug === "home") return false;
+    const pd = p.data as any;
+    // skip pages that point to external URLs
+    if (pd?.ExternalUrl) return false;
+    // allow an explicit opt-out via ShowInAbout = false
+    if (pd?.ShowInAbout === false) return false;
+    // if a Section field exists, only include pages explicitly in the 'about' section
+    if (pd?.Section && String(pd?.Section).toLowerCase() !== "about")
+      return false;
+    return true;
+  });
+
+  return aboutPages.map((p) => ({ params: { slug: p.data?.slug || p.id } }));
+}
+
+const pages = await getCollection("pages");
+
+const { slug } = Astro.params;
+const current = pages.find((p) => p.data?.slug === slug || p.id === slug);
+if (!current) throw new Error(`Page not found: ${slug}`);
+
+const relatedPages = pages.filter(
+  (p) => ![slug, "home", "about"].includes(p.data?.slug)
+);
+
+const page = current.data;
+
+const storeData = await getCollection("store");
+const store = storeData[0]?.data || {};
 ---
-<div>
-  Hola
-</div>
+
+<Layout
+  title={page?.SEO?.metaTitle || page?.Title || "Acerca de Nosotros"}
+  description={page?.SEO?.metaDescription || undefined}
+  keywords={page?.SEO?.metaKeywords || undefined}
+  author={page?.SEO?.metaAuthor || undefined}
+  ogImage={page?.SEO?.socialImage?.url || undefined}
+>
+  <main>
+    <!-- Hero -->
+    <section
+      class="py-6 bg-gradient"
+      style="background: linear-gradient(135deg,#f8fafc 0%, #eef2ff 100%);"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="display-4 fw-bold mb-3">{page?.Title || "Acerca de"}</h1>
+            {
+              page?.SEO?.metaDescription ? (
+                <p class="lead text-muted mb-0">{page.SEO.metaDescription}</p>
+              ) : (
+                <p class="lead text-muted mb-0">
+                  Conoce más sobre nosotros y lo que hacemos.
+                </p>
+              )
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Blocks -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <BlocksContent content={page?.Content || []} />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2 class="display-6 fw-bold">Paginas relacionadas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <PageCards pages={relatedPages} />
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -2,12 +2,16 @@
 import Layout from "../../layouts/BasicLayout.astro";
 import BlocksContent from "../../components/blocks.content.astro";
 import { getCollection } from "astro:content";
+import PageCards from "../../components/markket/pages.cards.astro";
 
 const pages = await getCollection("pages");
 const pageEntry = pages.find((p) => p.data.slug === "about");
 const page = pageEntry?.data || null;
 const storeData = await getCollection("store");
 const store = storeData[0]?.data || {};
+const relatedPages = pages.filter(
+  (p) => !["home", "about"].includes(p.data?.slug)
+);
 ---
 
 <Layout
@@ -98,6 +102,17 @@ const store = storeData[0]?.data || {};
           <i class="bi bi-envelope me-2"></i>
           Contáctanos
         </a>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2 class="display-6 fw-bold">Paginas relacionadas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <PageCards pages={relatedPages} />
       </div>
     </section>
   </main>
