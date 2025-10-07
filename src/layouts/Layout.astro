@@ -9,12 +9,17 @@ export interface Props {
   favicon?: string;
 }
 
+import { getCollection } from "astro:content";
+
+const storeData = await getCollection("store");
+const store = storeData[0]?.data || {};
+
 const { title, canonical, description, keywords, author, ogImage, favicon } =
   Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,10 +54,12 @@ const { title, canonical, description, keywords, author, ogImage, favicon } =
       href={favicon || `${import.meta.env.BASE_URL}favicon.svg`}
     />
 
-    <!-- Fonts -->
+    <!-- Bootstrap CSS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
     />
 
     <!-- Bootstrap Icons -->
@@ -60,33 +67,29 @@ const { title, canonical, description, keywords, author, ogImage, favicon } =
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <!-- Head Scripts from Store Settings -->
+    {
+      store?.settings?.meta?.head_scripts?.map(
+        (script: { url: string; defer: boolean }) => (
+          <script
+            defer={script.defer}
+            src={script.url}
+            type="text/javascript"
+          />
+        )
+      )
+    }
   </head>
   <body>
     <slot />
-  </body>
 
-  <!-- Bootstrap JavaScript Bundle with Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"
-  >
-  </script>
-  <!-- Product JavaScript -->
-  <script>
-    import "/assets/js/astro-ecommerce.js";
-  </script>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    >
+    </script>
+  </body>
 </html>
-<style is:global>
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  }
-</style>

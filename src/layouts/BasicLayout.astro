@@ -1,0 +1,47 @@
+---
+import Layout from "./Layout.astro";
+import SimpleNavbar from "../components/simpleNavbar";
+import SimpleFooter from "../components/simpleFooter";
+import { getCollection } from "astro:content";
+
+const storeData = await getCollection("store");
+const store = storeData[0]?.data || {};
+const storeName = store.title || "Markkët Express";
+const storeDescription =
+  store.Description ||
+  "Plantilla y tienda compatible con Markkët para prestar servicios y vender productos. Ejemplos, tutoriales y documentación en español.";
+const storeLogo = store.Logo?.url || "";
+const storeSEO = store.SEO || {};
+
+export interface Props {
+  title: string;
+  canonical?: string;
+  description?: string;
+  keywords?: string;
+  author?: string;
+  ogImage?: string;
+  favicon?: string;
+}
+
+const { title, canonical, description, keywords, author, ogImage, favicon } =
+  Astro.props;
+---
+
+<Layout
+  title={title}
+  description={description ||
+    `Conoce más sobre ${storeName}. ${storeDescription}`}
+  keywords={keywords || "acerca de, sobre nosotros, empresa, historia, equipo"}
+  author={author || storeSEO.metaAuthor || "Markkët Express"}
+  ogImage={ogImage || store.Logo?.url || store.Cover?.url}
+  favicon={favicon || store.Favicon?.url}
+>
+  <!-- Navigation -->
+  <SimpleNavbar storeName={storeName} storeLogo={storeLogo} />
+
+  <main>
+    <slot />
+  </main>
+
+  <SimpleFooter store={store} />
+</Layout>

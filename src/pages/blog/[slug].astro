@@ -1,0 +1,100 @@
+---
+import Layout from "../../layouts/BasicLayout.astro";
+import BlocksContent from "../../components/blocks.content.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((p) => ({ params: { slug: p.data?.slug || p.id } }));
+}
+
+const pages = await getCollection("pages");
+
+const { slug } = Astro.params;
+const posts = await getCollection("posts");
+const current = posts.find((p) => p.data?.slug === slug || p.id === slug)?.data;
+if (!current) throw new Error(`Page not found: ${slug}`);
+
+const relatedPosts = pages.filter(
+  (p) => ![slug,].includes(p.data?.slug)
+).splice(0,3)
+---
+
+<Layout
+  title={current?.SEO?.metaTit || current.Title }
+  description={current?.SEO?.metaDescription || undefined}
+  keywords={current?.SEO?.metaKeywords || undefined}
+  author={current?.SEO?.metaAuthor || undefined}
+  ogImage={current?.SEO?.socialImage?.url || undefined}
+>
+  <main>
+    <section
+      class="py-6 bg-gradient"
+      style="background: linear-gradient(135deg,#f8fafc 0%, #eef2ff 100%);"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="display-4 fw-bold mb-3">{current?.Title }</h1>
+            <p class="lead text-muted mb-0">{current.SEO.metaDescription}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <BlocksContent content={current?.Content || []} />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2 class="display-6 fw-bold">Articulos relacionados</h2>
+        </div>
+      </div>
+      <div class="row">
+  <div class="row">
+          {
+            relatedPosts.slice(1).map((post) => (
+              <div class="col-md-6 col-lg-4 mb-4">
+                <article class="card border-0 shadow-sm h-100">
+                  <img
+                    src={post?.data?.SEO?.socialImage?.url}
+                    alt={post?.data?.Title}
+                    class="card-img-top"
+                    style="height: 200px; object-fit: cover;"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <div class="mb-3">
+                      <span class="badge bg-primary">{'x'}</span>
+                    </div>
+                    <h5 class="card-title fw-bold">{post.data.Title}</h5>
+                    <p class="card-text text-muted flex-grow-1">
+                      {post.data.SEO?.metaDescription}
+                    </p>
+                    <div class="d-flex align-items-center text-muted small mb-3">
+                      <i class="bi bi-person-circle me-2"></i>
+                      <span class="me-3">{'x'}</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>{'x'}</span>
+                    </div>
+                    <a href={`/blog/${post.data.slug}`} class="btn btn-outline-primary">
+                      Leer Más
+                    </a>
+                  </div>
+                </article>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
